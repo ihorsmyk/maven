@@ -1,6 +1,5 @@
 package com.dotcat.servlet;
 
-
 import com.dotcat.model.Product;
 import com.dotcat.service.ProductService;
 import com.dotcat.service.impl.ProductServiceImpl;
@@ -33,9 +32,7 @@ public class ProductServlet extends HttpServlet {
 
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String id = req.getParameter("id");
         Product product = RestUtil.getFromJson(req, Product.class);
-        product.setId(Long.parseLong(id));
         int status = productService.update(product);
         resp.setStatus(status);
     }
