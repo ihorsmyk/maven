@@ -1,6 +1,7 @@
 package com.dotcat.springhw.service.impl;
 
 import com.dotcat.springhw.entity.Customer;
+import com.dotcat.springhw.entity.UserOrder;
 import com.dotcat.springhw.repository.CustomerRepository;
 import com.dotcat.springhw.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,3 +45,4 @@ public class CustomerServiceImpl implements CustomerService {
         return customerRepository.findAll();
     }
 }
+

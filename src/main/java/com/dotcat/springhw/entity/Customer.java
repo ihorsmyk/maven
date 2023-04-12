@@ -20,13 +20,4 @@ public class Customer {
 
     @OneToMany(mappedBy = "customer")
     private Set<UserOrder> orders = new HashSet<>();
-
-    @Override
-    public String toString() {
-        return "Customer{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", orders=" + orders +
-                '}';
-    }
 }

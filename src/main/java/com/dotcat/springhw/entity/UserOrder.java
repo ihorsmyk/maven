@@ -30,14 +30,5 @@ public class UserOrder {
     @ManyToOne
     @JoinColumn
     private Customer customer;
-
-    @Override
-    public String toString() {
-        return "UserOrder{" +
-                "id=" + id +
-                ", products=" + products +
-                ", customer=" + customer +
-                '}';
-    }
 }
 

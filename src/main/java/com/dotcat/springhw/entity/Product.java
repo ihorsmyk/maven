@@ -24,14 +24,4 @@ public class Product implements Serializable {
 
     @ManyToMany(fetch = FetchType.LAZY, mappedBy = "products")
     private Set<UserOrder> orders = new HashSet<>();
-
-    @Override
-    public String toString() {
-        return "Product{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", price=" + price +
-                ", orders=" + orders +
-                '}';
-    }
 }
