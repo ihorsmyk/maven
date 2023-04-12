@@ -2,6 +2,7 @@ version: '3.9'
 
 services:
   jdbc-mysql:
+    container_name: spring-db
     image: mysql:latest
     restart: always
     environment:
